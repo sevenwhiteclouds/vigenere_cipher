@@ -1,0 +1,22 @@
+Create an integer function called "print_vigenere" and call on (vector<char> chart).
+String choice;.
+Cout "\033[2J\033[1;1H" (to clear output window).
+Cout the top of the cipher bar.
+For statement (int i = 0; i < 189; i++),
+Cout "-". for divider.
+Cout to print out left hand bar of the cipher and first cipher line,
+for loop (int i = 0; i < chart.size(); i++),
+cout chart[i].
+For (int i = 0; i < 94; i++),
+rotate(chart.begin(), chart.begin() + 1, chart.end()),
+cout chart[0].
+For (int i = 0; i < chart.size(); i++),
+cout chart[i].
+Cout to return to main menu or exit program (Y/N).
+Getline(cin, choice).
+While loop (!((choice[0] == 'y') || (choice[0] == 'Y') || (choice[0] == 'n') || (choice[0] == 'N'))),
+cout error message and to ask to make valid choice. (Y/N).
+Getline(cin, choice).
+If statement ((choice[0] == 'y') || (choice[0] == 'Y')),
+return 1.
+Otherwise, return 0.

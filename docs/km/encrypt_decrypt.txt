@@ -1,0 +1,41 @@
+Pseudocode: explains the logic behind the function that will enrypt and decrypt
+the message using the user's key
+
+1. declare 3 vectors of integers to hold message, key, and shifted message
+2. check to see if the key size is greater than the message size
+3. if the key size is greater resize the key to match the message size
+4. otherwise if the the key size is smaller then subtract the size of the key
+from the message size and store that difference
+5. loop the number of times that was the difference from the previous calculation
+6. add the element in the key that matches the current loop cycle
+7. loop the same amount of times that is equal to the size of the message
+8. another loop inside previous loop that goes through the entire size of
+the chart
+9. if the ascii character stored in the message currently being look at equals
+to the same character currently being looked at in the chart store the number
+of the loop in the second loop in the vector to hold the casted message
+10. loop the same amount of times that is equal to the size of the key
+11. another loop inside previous loop that goes through the entire size of
+the chart
+12. if the ascii character stored in the key currently being look at equals
+to the same character currently being looked at in the chart store the number
+of the loop in the second loop in the vector to hold the casted key
+13. decide whether we are doing encryption or not
+14. if we are doing encryption then loop through the amount of times that is
+equal to the message size
+15. add the current element being looked at in the casted message plus the
+current element being looked at in the casted key then take the modulus
+of the size of the chart (95) and store it in the cast message vector
+16. if we are not doing decryption then loop through same amount of times that
+is equal to the message size
+17. subtract the current element being looked at in the casted message from the
+current element being looked at in the casted key then add the size of the chart
+size (95) and finally take the modules of the size of the chart (95) and
+store it in the cast message vector
+18. loop the same amount of times equal to the size of the casted shifted message
+19. another loop inside previous loop that goes through the entire size of
+the chart
+12. if the ascii character stored in the casted shifted message currently being
+look at equals to the number of times we have looped through in the second loop
+store the ascci character store in the chart at the position equal to the loop
+cycle into a string that outputs the encrypted or decrypted message

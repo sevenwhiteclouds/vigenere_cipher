@@ -1,0 +1,63 @@
+Set  encrypt = true
+Declare file stream
+Declare string choice
+Print Header Menu
+Print Enter the name of the file (ESC + Enter to go back):
+Call getline (cin, file_name)
+if (file_name[0] == 27)
+    Return 1
+endif
+Call  file.open(file_name)
+While file is not open
+Print You did not make a valid choice.
+ Print Please make a valid choice.
+ Print Choice Y/N:
+ Call  getline(cin, choice)
+    While choice[0]  is NOT equal to y or Y or n or N
+    Print You did not make a valid choice.
+ Print Please make a valid choice.
+     Print Choice Y/N:
+     Call  getline(cin, choice)
+endwhile
+if choice[0] is equal to y or Y
+Print Enter the name of the file (ESC + Enter to go back):
+Call  getline(cin, file_name);
+ If (file_name[0] == 27)
+        Return 1
+endif 
+Call file.open(file_name)
+else 
+Return -1
+endwhile
+Print Enter Message:
+Call   getline(cin, message)
+while (no_illegal(message))
+Print You entered an illegal key.
+        Print Enter message:
+        Call getline(cin, message)
+end while
+Print Enter key:
+Call getline(cin, key)
+while (no_illegal(key))
+Print Error: you entered an illegal key.
+Print Enter key:
+ Call getline(cin, key);
+endwhile
+Call encrypt_decrypt(chart, message, key, shift_message, encrypt)
+Write literal string  Encrypted message and variable  shift_message to a file
+Close file
+Print Success! The file was saved under the name: and variable file_name
+Print Return to main menu? No to exit program.
+ Print Choice Y/N: 
+  Call getline(cin, choice);
+While choice[0]  is NOT equal to y or Y or n or N
+    Print You did not make a valid choice.
+ Print Please make a valid choice.
+     Print Choice Y/N:
+     Call  getline(cin, choice)
+Endwhile
+If choice[0] is equal to y or Y 
+    Return 1
+Return 0 
+Endif
+End of write_file

@@ -1,0 +1,50 @@
+Create an integer function called "read_file" and call on (vector<char> and reference: chart,
+string message, string key, string shift_message, string file_name).
+Declare ifstream file and string choice.
+Output menu header.
+Cout asking user to enter name of file or have option to press ESC + Enter to return to menu.
+Getline calls on cin, file_name.
+If statement to check (file_name[0]==7) is true, return 1.
+Call on file.open(file_name).
+While loop conditioned to !file,
+couts an error message and options for Y/N (Yes to retry reading file and no to return to menu).
+Getline(cin, choice).
+Nested while loop for choices !((choice[0] == 'y') || (choice[0] == 'Y') || (choice[0] == 'n') || (choice[0] == 'N')),
+couts an error message and options Y/N.
+Getline(cin, choice).
+Nested if statement for (choice[0] == 'y') || (choice[0] == 'Y'),
+cout to enter name of file (or ESC to go back to previous menu.
+Getline(cin, file_name).
+Nested if statement for (file_name[0] == 27),
+then return to 1.
+Otherwise, file.open(file_name).
+Else, return -1.
+File.ignore(19); and getline(file, message);.
+Cout message to enter key.
+Getline(cin, key).
+While loop for (no_illegal(key)),
+cout error message for illegal key, ask to enter key again.
+Getline(cin, key).
+encrypt_decrypt(chart, message, key, shift_message, encrypt)
+Cout encrypted and decrypted message.
+Cout to ask user to write a decrypted message to the file with choice (Y/N).
+Getline(cin, choice).
+While loop for (!((choice[0] == 'y') || (choice[0] == 'Y') || (choice[0] == 'n') || (choice[0] == 'N'))),
+cout error message, ask user to make valid choice, options (Y/N).
+Getline(cin, choice).
+If statement for (choice[0] == 'y') || (choice[0] == 'Y'),
+ofstream file; and file.open(file_name);
+Nested if statement for (!file),
+cout error because unable to write file, make sure directory/file is not read only.
+Nested else statement,
+file << "Encrypted message: " << message << endl;
+file << "Decrypted message: " << shift_message;,
+cout success message for file update and saved with decrypted message.
+Cout to ask user to return to menu or exit program (Y/N).
+Getline(cin, choice).
+While loop for !((choice[0] == 'y') || (choice[0] == 'Y') || (choice[0] == 'n') || (choice[0] == 'N')),
+cout error message and ask user to make valid choice. (Y/N).
+Getline(cin, choice).
+If statement (choice[0] == 'y') || (choice[0] == 'Y'),
+return 1.
+Otherwise, return 0.

@@ -1,0 +1,4 @@
+Create a bool function called "no_illegal" and call on and reference the string_check variable.
+Use for loop to initialize i = 0, condition i < string_check.size(), and update on i++.
+Inside the for loop, use if statement to check if the variable string_check[i] > '~' or stromg_checl[i] < ' ') to return true.
+Otherwise, return false.

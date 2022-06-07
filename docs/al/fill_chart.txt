@@ -1,0 +1,18 @@
+Initialize for loop
+For  i is equal A, i is equal to Z and iterated I by one
+    chart.push_back(i)
+  Initialize for loop
+For  i is equal a, i is equal to z and iterated I by one
+    chart.push_back(i)
+
+Initialize for loop
+For  i is equal space, i is equal to @ and iterated I by one
+    chart.push_back(i)
+Initialize for loop
+For  i is equal square braket, and i is equal to backtick and iterated I by one
+    chart.push_back(i)
+
+ Initialize for loop
+For i is equal curly braket, and i is equal tilde and iterated I by one
+    chart.push_back(i)
+End of fill_chart

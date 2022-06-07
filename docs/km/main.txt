@@ -1,0 +1,23 @@
+Pseudocode: explains how the main function that drives the program works
+
+1. declare a vector of chars to hold the chart
+2. declared 5 strings, choice, message, key, shifted message, and file name
+to hold corresponding parts of encrypted message
+3. declare a boolean to restart the program
+4. call a function, pass the vector previously declared to it, and fill in chart
+5. print out user menu and take in input from user
+6. if the user does not make correct choice keep asking for correct choice
+7. if the user selected option to write a file call the function to write a file
+and pass the chart and the corresponding string save the output of the function
+call into the boolean to restart the program previously declared
+8. if the user decides to read a file call the read a file function and pass the 
+chart and the corresponding strings to take in and save output and save the
+output of the function to the boolean restart previously declared
+9. if the user selected to print out the expanded vigenere cipher call the
+print vigenere function and save the output of the function into the boolean
+restart program previously declared
+10. if any the boolean is on from any of the previous saved function calls
+keep repeating the menu
+11. if the boolean is off from any of the previous saved function calls stop
+repeating the menu and exit
+12. display output message to user
