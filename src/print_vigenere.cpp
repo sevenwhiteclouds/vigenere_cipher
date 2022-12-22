@@ -2,7 +2,7 @@
 #include <string>
 #include <algorithm>
 #include <vector>
-#include "print_vigenere.h"
+#include "../inc/print_vigenere.h"
 
 using namespace std;
 

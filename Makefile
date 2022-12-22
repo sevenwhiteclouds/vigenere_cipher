@@ -1,5 +1,5 @@
-all run:
-	g++ *.cpp -o k && ./k
+run:
+	g++ ./src/*.cpp -o ./build/cipher && ./build/cipher
 
 clean:
-	rm k
+	rm ./build/cipher

@@ -6,7 +6,7 @@ at this point the string should already exist
 
 #include <string>
 #include <vector>
-#include "no_illegal.h"
+#include "../inc/no_illegal.h"
 
 using namespace std;
 

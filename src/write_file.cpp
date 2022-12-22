@@ -2,9 +2,9 @@
 #include <vector>
 #include <string>
 #include <fstream>
-#include "write_file.h"
-#include "no_illegal.h"
-#include "encrypt_decrypt.h"
+#include "../inc/write_file.h"
+#include "../inc/no_illegal.h"
+#include "../inc/encrypt_decrypt.h"
 
 using namespace std;
 

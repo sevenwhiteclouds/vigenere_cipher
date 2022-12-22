@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "fill_chart.h"
-#include "write_file.h"
-#include "read_file.h"
-#include "print_vigenere.h"
+#include "../inc/fill_chart.h"
+#include "../inc/write_file.h"
+#include "../inc/read_file.h"
+#include "../inc/print_vigenere.h"
 
 using namespace std;
 
